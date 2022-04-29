@@ -1,0 +1,13 @@
+*{
+    background-color: blue;
+}
+h1{
+    color: black;
+}
+p{
+    color: white;
+    text-align: center;
+}
+address{
+    color: red;
+}
