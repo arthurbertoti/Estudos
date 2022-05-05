@@ -1,4 +1,5 @@
 #Títulos
+<a id=exemplo></a>
 ##Título 2
 ###Título 3
 ####Título 4
@@ -61,7 +62,7 @@ $$
 
 ---
 
-<a id=#link>
+#Links
 [Acesse meu GitHub](https://github.com/arthurbertoti)
 
 ---
@@ -83,12 +84,6 @@ numéro|nome|nota
 :dog:
 :s:
 
----
-
-#Marcar usuários
-
-@marthurbertoti
-
-
 --- 
-[link para mesma página](#link)
+#Link para mesma página
+[clique aqui](#exemplo)
