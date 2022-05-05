@@ -61,7 +61,7 @@ $$
 
 ---
 
-#link
+<a id=#link>
 [Acesse meu GitHub](https://github.com/arthurbertoti)
 
 ---
@@ -91,4 +91,4 @@ numéro|nome|nota
 
 
 --- 
-[link para mesma página](https://arthurbertoti/estudos/markdown/markdown.md#link)
+[link para mesma página](#link)
