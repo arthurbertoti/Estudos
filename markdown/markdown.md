@@ -88,3 +88,7 @@ numéro|nome|nota
 #Marcar usuários
 
 @marthurbertoti
+
+
+--- 
+[link para mesma página](https://arthurbertoti/estudos/markdown/markdown.md#link)
