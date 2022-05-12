@@ -1,0 +1,23 @@
+/** Rules **/
+@charset "UTF-8";
+/** Styles **/
+body {
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: aqua;
+}
+p,a{
+    color: cornflowerblue;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
