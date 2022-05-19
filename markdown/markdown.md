@@ -58,7 +58,7 @@ $$
 ---
 
 #Imagem
-![Rapper](../imagens/rapper.png)
+![Rapper](images/rapper.png)
 
 ---
 
