@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Operadores no JavaScript</title>
+</head>
+<body>
+    <h1>Operadores no JavaScript</h1>
+    <h2><abbr title="esta e a sequência que deve ser seguida nas operações em geral">Ordem de precedência <strong>GERAL</strong></abbr></h2>
+    <ol>
+        <li><strong><abbr title="+, -, *, /, %, **"><a href="#aritmedia">Operadores aritméticos</a></abbr></strong></li>
+        <li><strong><abbr title=">, <, >=, >=, ==, !=, ===, !=="><a href="#relacao">Operadores relacionais</a></abbr></strong></li>
+        <li><strong><abbr title="!, &&, ||"><a href="#logica">Operadores lógicos</a></abbr></strong></li>
+        <li><strong><abbr title="teste ? true : false"><a href="#ternario">Operador ternário</a></abbr></strong></li>
+    </ol>
+    <hr>
+    <h2 id="aritmedia">Operadores aritméticos</h2>
+    <ul>
+        <script>
+            var n1 = 5
+            var n2 = 2
+            document.write(`<li>Adição: ${n1} <strong>+</strong> ${n2} = ${n1 + n2}</li>`)
+            document.write(`<li>Subtração: ${n1} <strong>-</strong> ${n2} = ${n1 - n2}</li>`)
+            document.write(`<li>Multiplicação: ${n1} <strong>*</strong> ${n2} = ${n1 * n2}</li>`)
+            document.write(`<li>Divisão: ${n1} <strong>/</strong> ${n2} = ${n1 / n2}</li>`)
+            document.write(`<li>Resto da divisão: ${n1} <strong>%</strong> ${n2} = ${n1 % n2}</li>`)
+            document.write(`<li>Potenciação: ${n1} <strong>**</strong> ${n2} = ${n1 ** n2}</li>`)
+        </script>
+    </ul>
+    <h3><abbr title="esta e a sequência que deve ser seguida nas operações aritméticas">Ordem de precedência</abbr></h3>
+    <ol>
+        <li><strong>()</strong></li>
+        <li><strong>**</strong></li>
+        <li><strong>*, /, %</strong></li>
+        <li><strong>+, -</strong></li>
+    </ol>
+    <h3><abbr title="a primeira variável ficará com o valor da operação">Auto atribuições</abbr></h3>
+    <ul>
+        <script>
+            var n1 = 5
+            document.write(`var n1 = 5`)
+            document.write(`<li>Adição: n1 <strong>+=</strong> 2 = ${n1 += 2}</li>`)
+            document.write(`<li>Subtração: n1 <strong>-=</strong> 2 = ${n1 -= 2}</li>`)
+            document.write(`<li>Multiplicação: n1 <strong>*=</strong> 2 = ${n1 *= 2}</li>`)
+            document.write(`<li>Divisão: n1 <strong>/=</strong> 2 = ${n1 /= 2}</li>`)
+            document.write(`<li>Resto da divisão: n1 <strong>%=</strong> 2 = ${n1 %= 2}</li>`)
+            document.write(`<li>Potenciação: n1 <strong>**=</strong> 2 = ${n1 **= 2}</li>`)
+        </script>
+    </ul>
+    <h3><abbr title="simplificação de auto atribuição por 1">Incrementos</abbr></h3>
+    <ul>
+        <script>
+            var x = 5
+            document.write(`var x = 5`)
+            document.write(`<li>Adição: <strong>++x</strong></li>`)
+            document.write(`<ul><li>x = ${++x}</ul></li>`)
+            document.write(`<li>Subtração: <strong>--x</strong></li>`)
+            document.write(`<ul><li>x = ${4}</ul></li>`)
+        </script>
+    </ul>
+    <hr>
+    <h2 id="relacao">Operadores relacionais</h2>
+    <ul>
+        <script>
+            document.write(`<li>Maior: 5 <strong>></strong> 2 = ${5 > 2}</li>`)
+            document.write(`<li>Menor: 7 <strong><</strong> 4 = ${7 < 4}</li>`)
+            document.write(`<li>Maior igual: 8 <strong>>=</strong> 8 = ${8 <= 8}</li>`)
+            document.write(`<li>Menor igual: 9 <strong><=</strong> 7 = ${9 <= 7}</li>`)
+            document.write(`<li>Igual: 5 <strong>==</strong> 5 = ${5 == 5}</li>`)
+            document.write(`<li>Diferente: 4 <strong>!=</strong> 4 = ${4 != 4}</li>`)
+        </script>
+    </ul>
+    <h3><abbr title="além do valor, o operador testa o tipo da variável">Operador de identidade</abbr></h3>
+    <ul>
+        <script>
+            document.write(`<li>Igual: 5 <strong>==</strong> 5 = ${5 == 5} <br></li>`)
+            document.write(`<li>Igual: 5 <strong>==</strong> '5' = ${5 == '5'} <br></li>`)
+            document.write(`<li>Igual restrito: 5 <strong>===</strong> 5 = ${5 === 5} <br></li>`)
+            document.write(`<li>Igual restrito: 5 <strong>===</strong> '5' = ${5 === '5'} <br></li>`)
+            document.write(`<br><li>Diferente: 5 <strong>!=</strong> 5 = ${5 != 5} <br></li>`)
+            document.write(`<li>Diferente: 5 <strong>!=</strong> '5' = ${5 != '5'} <br></li>`)
+            document.write(`<li>Desigual restrito: 5 <strong>!==</strong> 5 = ${5 !== 5} <br></li>`)
+            document.write(`<li>Desigual restrito: 5 <strong>!==</strong> '5' = ${5 !== '5'}</li>`)
+        </script>
+    </ul>
+    <hr>
+    <h2 id="logica">Operadores lógicos</h2>
+    <ul>
+        <script>
+            document.write(`<li>Negação: <strong>!</strong></li>`)
+        </script>
+            <ul>
+                <script>
+                    document.write(`<li><strong>!</strong> true = false</li>`)
+                    document.write(`<li><strong>!</strong> false = true</li>`)
+                </script>
+            </ul>
+        <script>
+            document.write(`<li>Conjunção: <strong>&&</strong></li>`)
+        </script>
+            <ul>
+                <script>
+                    document.write(`<li>true <strong>&&</strong> true = true</li>`)
+                    document.write(`<li>true <strong>&&</strong> false = false</li>`)
+                    document.write(`<li>false <strong>&&</strong> true = false</li>`)
+                    document.write(`<li>false <strong>&&</strong> false = false</li>`)
+                </script>
+            </ul>
+        <script>
+            document.write(`<li>Disjunção: <strong>||</strong></li>`)
+        </script>
+            <ul>
+                <script>
+                    document.write(`<li>true <strong>||</strong> true = true</li>`)
+                    document.write(`<li>true <strong>||</strong> false = true</li>`)
+                    document.write(`<li>false <strong>||</strong> true = true</li>`)
+                    document.write(`<li>false <strong>||</strong> false = false</li>`)
+                </script>
+            </ul>
+    </ul>
+    <h3><abbr title="esta e a sequência que deve ser seguida nas operações lógicas">Ordem de precedência</abbr></h3>
+    <ol>
+        <li><strong>!</strong></li>
+        <li><strong>&&</strong></li>
+        <li><strong>||</strong></li>
+    </ol>
+    <hr>
+    <h2 id="ternario">Operador Ternário</h2>
+    <script>
+        document.write(`teste <strong>?</strong> true <strong>:</strong> false`)
+    </script>
+    <h3>Exemplo:</h3>
+    <script>
+        var n1 = 9
+        var n2 = 7
+        media = (n1 + n2) / 2
+        resultado = media >= 7 ? "Aprovado" : "Reprovado"
+        document.write(`n1 = 9 <br>`)
+        document.write(`n2 = 7 <br>`)
+        document.write(`media = (n1 + n2) / 2 <br>`)
+        document.write(`resultado = media >= 7 <strong>?</strong> "Aprovado" <strong>:</strong> "Reprovado" <br>`)
+        document.write(`resultado = ${resultado}`)
+    </script>
+</body>
+</html>
