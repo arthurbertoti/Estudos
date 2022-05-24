@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font: normal 18pt Arial, Helvetica, sans-serif;
+        }
+        input{
+            width: 150px;
+            height: 25px;
+        }
+    </style>
+    <title>Somar</title>
+</head>
+<body>
+    <h1>Somando</h1>
+    <h2>Escreva 2 números para ver a sua soma</h2>
+    <input type="number" placeholder="" name="n1" id="n1"> + 
+    <input type="number" placeholder="" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="soma()">
+    <p id="res"></p>
+    <script>
+        function soma(){
+            var n1 = Number(document.getElementById("n1").value)
+            var n2 = Number(document.querySelector("input#n2").value)
+            var total = n1 + n2
+            var res = document.querySelector('p#res')
+            res.innerText = `A soma de ${n1} e ${n2} é ${total}`
+        }
+    </script>
+</body>
+</html>

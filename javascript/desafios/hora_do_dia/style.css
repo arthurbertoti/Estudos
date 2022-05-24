@@ -1,0 +1,32 @@
+body{
+    font: normal 15pt Arial;
+    background-color: rgb(124, 192, 255);
+    text-align: center;
+    color: white;
+}
+section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    height: auto;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.474);
+    color: black;
+}
+#msg{
+    font-style: italic;
+}
+#img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+a{
+    text-decoration: none;
+    color: rgb(144, 144, 144);
+    font-style: italic;
+}
+a:hover{
+    text-decoration: underline;
+}
