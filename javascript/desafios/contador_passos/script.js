@@ -3,10 +3,11 @@ function steps(){
     var end = document.getElementById('end').value
     var step = document.getElementById('step').value
     var res = document.getElementById('res')
-    for(var start = x; start <= end; start = step + start){
-        if (step == 0 || start < 0 || start == null || step == null || end < 0 || end == null || start > end){
-            document.alert('[ERRO]. Imposível contar!')
-        }else{
+    var start = 1
+    if (step == 0 || start < 0 || start == null || step == null || end < 0 || end == null || start > end){
+        window.alert('[ERRO]. Imposível contar!')
+    }else{
+        for(var start = x; start <= end; start = step + start){
             if(start == x){
                 res.innerHTML = '<p>Contando...</p>'
                 res.innerHTML += `${start}`

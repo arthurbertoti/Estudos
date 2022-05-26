@@ -1,0 +1,24 @@
+body{
+    font: normal 15pt Arial;
+    background-color: rgb(105, 105, 255);
+    text-align: center;
+    color: white;
+}
+section{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    text-align: justify;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
