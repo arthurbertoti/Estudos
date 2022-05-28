@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>none</title>
+    <title>Gerador de tabuada</title>
 </head>
 <body>
-    <h1>none</h1>
+    <h1>Gerador de tabuada</h1>
     <section>
         <div>
-            <p>Digite um número: <input type="number" id="num"></p>
-            <input type="button" value="Verificar" onclick="verificar()">
+            <p>
+                Digite um número: <input type="number" id="num">
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="res"></div>
+        <div id="res">
+            <select  id="tab" size ='10'>
+                <option>Digite um número acima</option>
+            </select>
+        </div>
     </section>
     <footer>
         <p><a href="https://github.com/arthurbertoti" target="_blank"><img src="images/icone-github.png" alt="Ícone do GitHub">GitHub</a></p>
