@@ -34,3 +34,12 @@ for(let pos in num){
 
 console.log(num.indexOf(7)) //comando para pesquisar a chave do valor
 console.log(num.indexOf(2)) //quando não tiver o valor, será mostrado -1 como resposta
+
+
+function resume(x){
+    for(let pos in x){
+        console.log(`A posição ${pos} tem valor ${x[pos]}`)
+}
+}
+let num = [6,1]
+resume(num) //chama a função acima percorre o array
