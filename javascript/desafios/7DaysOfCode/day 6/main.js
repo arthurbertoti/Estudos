@@ -26,11 +26,11 @@ var retirar = true;
 var escolha = 0;
 var itemAdd = '';
 var itemRem= '';
-listaDeCompras = [];
-frutas = [];
-laticinios = [];
-congelados = [];
-doces = [];
+const listaDeCompras = new Array();
+const frutas = new Array();
+const laticinios = new Array();
+const congelados = new Array();
+const doces = new Array();
 
 //Enquanto o user quiser adicionar algo, vai poder
 while (inserir || retirar){
