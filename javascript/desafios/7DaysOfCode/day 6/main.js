@@ -24,8 +24,8 @@ Já para a remoção em si, existem diferentes métodos. O método o shift, por 
 var inserir = true;
 var retirar = true;
 var escolha = 0;
-var itemadd = '';
-var itemrem= '';
+var itemAdd = '';
+var itemRem= '';
 listaDeCompras = [];
 frutas = [];
 laticinios = [];
@@ -38,7 +38,7 @@ while (inserir || retirar){
     if (inserir){
         //inserir a escolha em uma lista
         while (escolha != 1 && escolha != 2 && escolha != 3 && escolha != 4 ){
-            itemadd = prompt('Qual o item que você quer adicionar?');
+            itemAdd = prompt('Qual o item que você quer adicionar?');
             escolha = prompt('Em qual categoria essa comida se encaixa?\n(FRUTAS - 1, LATICÍNIOS - 2, CONGELADOS - 3, DOCES - 4)')
             if (escolha != 1 && escolha != 2 && escolha != 3 && escolha != 4){
                 alert('Você digitou algo errado, tente novamente!')
@@ -46,13 +46,13 @@ while (inserir || retirar){
         } 
         //Colocar em uma lista de fato
         if (escolha == 1){
-            frutas.push(' '+itemadd);
+            frutas.push(' '+ itemAdd);
         } else if(escolha == 2){
-            laticinios.push(' '+itemadd);
+            laticinios.push(' '+ itemAdd);
         } else if(escolha == 3) {
-            congelados.push(' '+itemadd);
+            congelados.push(' '+ itemAdd);
         } else if(escolha == 4){
-            doces.push(' '+itemadd);
+            doces.push(' '+ itemAdd);
         }
         alert('Item ADICIONADO!')
         //para que resete
@@ -69,33 +69,33 @@ while (inserir || retirar){
             }
         }
         if (escolha == 1){
-            itemrem = prompt(`${frutas}\nQual o item que você quer retirar?`)
-            if (frutas.indexOF(itemrem) != -1){
-                frutas.splice(frutas.indexOF(itemrem),1);
+            itemRem = prompt(`${frutas}\nQual o item que você quer retirar?`)
+            if (frutas.indexOF(itemRem) != -1){
+                frutas.splice(frutas.indexOF(itemRem),1);
                 alert(frutas);
             } else{
                 alert('Não foi possível encontrar o item dentro da lista!')
             }
         } else if(escolha == 2){
-            itemrem = prompt(`${laticinios}\nQual o item que você quer retirar?`)
-            if (laticinios.indexOF(itemrem) != -1){
-                laticinios.splice(laticinios.indexOF(itemrem),1);
+            itemRem = prompt(`${laticinios}\nQual o item que você quer retirar?`)
+            if (laticinios.indexOF(itemRem) != -1){
+                laticinios.splice(laticinios.indexOF(itemRem),1);
                 alert(laticinios);
             } else{
                 alert('Não foi possível encontrar o item dentro da lista!')
             }
         } else if(escolha == 3) {
-            itemrem = prompt(`${congelados}\nQual o item que você quer retirar?`)
-            if (congelados.indexOF(itemrem) != -1){
-                congelados.splice(congelados.indexOF(itemrem),1);
+            itemRem = prompt(`${congelados}\nQual o item que você quer retirar?`)
+            if (congelados.indexOF(itemRem) != -1){
+                congelados.splice(congelados.indexOF(itemRem),1);
                 alert(congelados);
             } else{
                 alert('Não foi possível encontrar o item dentro da lista!')
             }
         } else if(escolha == 4){
-            itemrem = prompt(`${doces}\nQual o item que você quer retirar?`)
-            if (doces.indexOF(itemrem) != -1){
-                doces.splice(doces.indexOF(itemrem),1);
+            itemRem = prompt(`${doces}\nQual o item que você quer retirar?`)
+            if (doces.indexOF(itemRem) != -1){
+                doces.splice(doces.indexOF(itemRem),1);
                 alert(doces);
             } else{
                 alert('Não foi possível encontrar o item dentro da lista!')
