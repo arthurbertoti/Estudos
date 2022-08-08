@@ -97,11 +97,12 @@ label{
 }
 
 button{
-	padding: .5em;
-	border-radius: 15px;
-	border: 3px solid;
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
 	font-size: 1.2em;
 	cursor: pointer;
+	margin: 0;
 	margin-top: -3px;
 	color: #fff;
 	background-color:#0c8cd3;
@@ -114,7 +115,8 @@ button{
 }
 
 button:active{
-	background-color: orange;
+	margin-top:0px;
+	border: 0;
 }
 
 button[disabled=disabled], button:disabled {
@@ -129,4 +131,8 @@ button[disabled=disabled], button:disabled {
 
 .campo-invalido{
 	border: 1px solid red;
+}
+
+.paciente-invalido {
+	background-color: lightcoral;
 }
