@@ -1,8 +1,8 @@
-#Títulos
+# Títulos
 <a id=exemplo></a>
-##Título 2
-###Título 3
-####Título 4
+## Título 2
+### Título 3
+#### Título 4
 ---
 
 #Edição de texto
@@ -25,16 +25,16 @@ $$
 
 ---
 
-#Listas
+# Listas
 
-##numerada:
+## numerada:
 
 1. teste 1
    1. teste 2
    1. teste 3
 1. teste 4
 
-##demarcada:
+## demarcada:
 
 * teste
 * teste
@@ -44,7 +44,7 @@ $$
 - teste
 - teste
 
-##de tarefas:
+## de tarefas:
 
 1. [] tarefa 1
 1. [x] tarefa 2
@@ -57,17 +57,19 @@ $$
 
 ---
 
-#Imagem
+# Imagem
 ![Rapper](images/rapper.png)
 
 ---
 
-#Links
+# Links
 [Acesse meu GitHub](https://github.com/arthurbertoti)
 
+## Link para mesma página
+[clique aqui](#exemplo)
 ---
 
-#Tabelas
+# Tabelas
 
 numéro|nome|nota
 ---|---|---
@@ -77,7 +79,7 @@ numéro|nome|nota
 
 ---
 
-#Emojis
+# Emojis
 
 :vulcan_salute:
 :monkey:
@@ -85,5 +87,3 @@ numéro|nome|nota
 :s:
 
 --- 
-#Link para mesma página
-[clique aqui](#exemplo)
